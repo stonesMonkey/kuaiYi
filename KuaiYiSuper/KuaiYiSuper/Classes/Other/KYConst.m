@@ -16,4 +16,9 @@ CGFloat const KYNavgationBarTitleFontSize = 19;
 
 CGFloat const KYMasterTopViewHeight = 250;
 
+// 主页上显示天气信息高度
+CGFloat const KYMasterTopMessageHeight = 70.5;
+
 NSString * const KYShowCollectionViewCellIdentifier = @"KYShowCollectionViewCellIdentifier";
+
+NSString * const KYModuleCollectionViewCellIdentifer = @"NSString * const KYModuleCollectionViewCellIdentifer";

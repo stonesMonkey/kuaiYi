@@ -50,7 +50,8 @@
     
 #warning 这个数据稍后需要处理一下
     // 设置showFlow
-    self.showFlow.itemSize = CGSizeMake(KYScreenW, 179.5);
+    // 这里记得减一因为线的高度是一
+    self.showFlow.itemSize = CGSizeMake(KYScreenW, KYMasterTopViewHeight - KYMasterTopMessageHeight - 1);
     self.showFlow.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.showFlow.minimumLineSpacing = 0;
     self.showFlow.minimumInteritemSpacing = 0;

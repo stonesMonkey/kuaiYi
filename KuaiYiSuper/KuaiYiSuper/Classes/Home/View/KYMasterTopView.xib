@@ -63,7 +63,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ykb-bu-Rqs" customClass="KYShowCollectionView">
-                    <rect key="frame" x="0.0" y="70" width="375" height="299.5"/>
+                    <rect key="frame" x="0.0" y="71.5" width="375" height="298"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HNt-rD-DXA" customClass="KYFlowLayout">
                         <size key="itemSize" width="100" height="100"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -76,13 +76,21 @@
                     <color key="pageIndicatorTintColor" red="0.21960784310000001" green="0.69411764710000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="currentPageIndicatorTintColor" red="1" green="0.19422408350000001" blue="0.17696140569999999" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxF-Hg-TDg">
+                    <rect key="frame" x="0.0" y="70" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="2mQ-s7-Emr" secondAttribute="trailing" id="5Me-ec-vZB"/>
                 <constraint firstItem="hSW-2X-03m" firstAttribute="centerX" secondItem="GvW-Ra-A2C" secondAttribute="centerX" id="66H-TS-3W5"/>
-                <constraint firstItem="Ykb-bu-Rqs" firstAttribute="top" secondItem="2mQ-s7-Emr" secondAttribute="bottom" id="bc2-1b-ABh"/>
+                <constraint firstItem="UxF-Hg-TDg" firstAttribute="leading" secondItem="GvW-Ra-A2C" secondAttribute="leading" id="9Un-4O-PMg"/>
+                <constraint firstItem="UxF-Hg-TDg" firstAttribute="top" secondItem="2mQ-s7-Emr" secondAttribute="bottom" id="A8q-dd-FX3"/>
+                <constraint firstItem="Ykb-bu-Rqs" firstAttribute="top" secondItem="UxF-Hg-TDg" secondAttribute="bottom" id="RmH-Y6-wCw"/>
+                <constraint firstItem="Ykb-bu-Rqs" firstAttribute="top" secondItem="2mQ-s7-Emr" secondAttribute="bottom" constant="1" id="bc2-1b-ABh"/>
                 <constraint firstItem="2mQ-s7-Emr" firstAttribute="top" secondItem="GvW-Ra-A2C" secondAttribute="top" id="i9J-Tn-WZr"/>
+                <constraint firstAttribute="trailing" secondItem="UxF-Hg-TDg" secondAttribute="trailing" id="smI-Aj-RVa"/>
                 <constraint firstAttribute="bottom" secondItem="hSW-2X-03m" secondAttribute="bottom" constant="10" id="v31-pb-WZj"/>
                 <constraint firstAttribute="bottom" secondItem="Ykb-bu-Rqs" secondAttribute="bottom" id="y1f-8p-4HN"/>
                 <constraint firstItem="Ykb-bu-Rqs" firstAttribute="leading" secondItem="GvW-Ra-A2C" secondAttribute="leading" id="z51-wO-AhQ"/>
@@ -100,7 +108,7 @@
                 <outlet property="weatherImageView" destination="kYv-wE-FtG" id="VzU-AB-PKL"/>
                 <outlet property="weatherLabel" destination="BYt-D0-fR8" id="7dc-sz-xPD"/>
             </connections>
-            <point key="canvasLocation" x="1121" y="-37"/>
+            <point key="canvasLocation" x="1120.5" y="-37"/>
         </view>
     </objects>
     <resources>

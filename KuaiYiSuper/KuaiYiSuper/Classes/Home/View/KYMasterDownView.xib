@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Crm-4a-qGB" customClass="KYMasterDownView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGx-g1-7qT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tCm-EZ-lFn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic4-Oy-YWw">
+                    <rect key="frame" x="0.0" y="1" width="375" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yj" translatesAutoresizingMaskIntoConstraints="NO" id="rpT-cc-vRU">
+                            <rect key="frame" x="12" y="12" width="6" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="QPr-WB-Aj9"/>
+                                <constraint firstAttribute="width" constant="6" id="ly6-JV-2ml"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名医通" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5C-ta-dj8">
+                            <rect key="frame" x="24" y="11" width="51" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rpT-cc-vRU" firstAttribute="centerY" secondItem="ic4-Oy-YWw" secondAttribute="centerY" id="GaK-NG-H0h"/>
+                        <constraint firstItem="c5C-ta-dj8" firstAttribute="centerY" secondItem="ic4-Oy-YWw" secondAttribute="centerY" id="Qt8-Le-WZ9"/>
+                        <constraint firstItem="c5C-ta-dj8" firstAttribute="leading" secondItem="rpT-cc-vRU" secondAttribute="trailing" constant="6" id="T8f-sl-lUu"/>
+                        <constraint firstAttribute="height" constant="44" id="fE4-aV-BL2"/>
+                        <constraint firstItem="rpT-cc-vRU" firstAttribute="leading" secondItem="ic4-Oy-YWw" secondAttribute="leading" constant="12" id="lhv-bO-49D"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeu-jy-XrP">
+                    <rect key="frame" x="0.0" y="45" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1QV-mg-nPI"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qCw-Pp-nAl" customClass="KYModuleCollectionView">
+                    <rect key="frame" x="0.0" y="46" width="375" height="254"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fSo-TS-2lb" customClass="KYModuleFlowLayout">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZGx-g1-7qT" firstAttribute="leading" secondItem="Crm-4a-qGB" secondAttribute="leading" id="34Y-os-WiT"/>
+                <constraint firstItem="qCw-Pp-nAl" firstAttribute="top" secondItem="jeu-jy-XrP" secondAttribute="bottom" id="8tn-6M-0mS"/>
+                <constraint firstItem="ic4-Oy-YWw" firstAttribute="leading" secondItem="Crm-4a-qGB" secondAttribute="leading" id="D52-FQ-6RI"/>
+                <constraint firstAttribute="trailing" secondItem="ic4-Oy-YWw" secondAttribute="trailing" id="DEY-0Y-apJ"/>
+                <constraint firstItem="jeu-jy-XrP" firstAttribute="leading" secondItem="Crm-4a-qGB" secondAttribute="leading" id="Eal-Xs-P6u"/>
+                <constraint firstItem="ZGx-g1-7qT" firstAttribute="top" secondItem="Crm-4a-qGB" secondAttribute="top" id="G5w-iu-RU5"/>
+                <constraint firstAttribute="bottom" secondItem="qCw-Pp-nAl" secondAttribute="bottom" id="Gg0-Qy-ju7"/>
+                <constraint firstAttribute="trailing" secondItem="ZGx-g1-7qT" secondAttribute="trailing" id="OcR-9w-qwL"/>
+                <constraint firstAttribute="trailing" secondItem="jeu-jy-XrP" secondAttribute="trailing" id="VLx-Qd-WyQ"/>
+                <constraint firstItem="jeu-jy-XrP" firstAttribute="top" secondItem="ic4-Oy-YWw" secondAttribute="bottom" id="iyO-qI-bST"/>
+                <constraint firstItem="ic4-Oy-YWw" firstAttribute="top" secondItem="ZGx-g1-7qT" secondAttribute="bottom" id="v6Z-hF-Nze"/>
+                <constraint firstAttribute="trailing" secondItem="qCw-Pp-nAl" secondAttribute="trailing" id="zKV-wy-hFA"/>
+                <constraint firstItem="qCw-Pp-nAl" firstAttribute="leading" secondItem="Crm-4a-qGB" secondAttribute="leading" id="zaj-1z-EZb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moduleCollectionView" destination="qCw-Pp-nAl" id="M6e-Sr-8ln"/>
+                <outlet property="moduleFlowLayout" destination="fSo-TS-2lb" id="BJa-cM-he5"/>
+            </connections>
+            <point key="canvasLocation" x="154.5" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yj" width="6" height="20"/>
+    </resources>
+</document>
