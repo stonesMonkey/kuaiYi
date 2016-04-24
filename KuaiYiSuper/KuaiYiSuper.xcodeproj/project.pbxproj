@@ -12,6 +12,7 @@
 		511C88B01CCC87D9008F2BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511C88AF1CCC87D9008F2BDD /* Assets.xcassets */; };
 		517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FBA1CCC953300AE9372 /* KYMasterVc.m */; };
 		517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FC01CCCACA200AE9372 /* KYConst.m */; };
+		517F3FC81CCCB13600AE9372 /* KYNavigationVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FC71CCCB13600AE9372 /* KYNavigationVc.m */; };
 		883088B8D255FCBE799C5F2A /* libPods-KuaiYiSuper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CFF8C3C7370EFA6CEA0E9 /* libPods-KuaiYiSuper.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		517F3FBD1CCC963000AE9372 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		517F3FBF1CCCACA200AE9372 /* KYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYConst.h; sourceTree = "<group>"; };
 		517F3FC01CCCACA200AE9372 /* KYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYConst.m; sourceTree = "<group>"; };
+		517F3FC61CCCB13600AE9372 /* KYNavigationVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNavigationVc.h; sourceTree = "<group>"; };
+		517F3FC71CCCB13600AE9372 /* KYNavigationVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYNavigationVc.m; sourceTree = "<group>"; };
 		6F1CFF8C3C7370EFA6CEA0E9 /* libPods-KuaiYiSuper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KuaiYiSuper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89B5DCECB3E65E886885D71 /* Pods-KuaiYiSuper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiYiSuper.release.xcconfig"; path = "Pods/Target Support Files/Pods-KuaiYiSuper/Pods-KuaiYiSuper.release.xcconfig"; sourceTree = "<group>"; };
 		E04C2BA99046DFF22DD17AA4 /* Pods-KuaiYiSuper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiYiSuper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KuaiYiSuper/Pods-KuaiYiSuper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		517F3FB41CCC951C00AE9372 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				517F3FC21CCCB11A00AE9372 /* Main */,
 				517F3FB51CCC951C00AE9372 /* Home */,
 				517F3FBE1CCCAC8D00AE9372 /* Other */,
 			);
@@ -141,6 +145,39 @@
 				517F3FC01CCCACA200AE9372 /* KYConst.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		517F3FC21CCCB11A00AE9372 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				517F3FC31CCCB11A00AE9372 /* Controller */,
+				517F3FC41CCCB11A00AE9372 /* Model */,
+				517F3FC51CCCB11A00AE9372 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		517F3FC31CCCB11A00AE9372 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				517F3FC61CCCB13600AE9372 /* KYNavigationVc.h */,
+				517F3FC71CCCB13600AE9372 /* KYNavigationVc.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		517F3FC41CCCB11A00AE9372 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		517F3FC51CCCB11A00AE9372 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7B954A64E3AAE96293F3AFFB /* Pods */ = {
@@ -272,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */,
+				517F3FC81CCCB13600AE9372 /* KYNavigationVc.m in Sources */,
 				511C88A81CCC87D9008F2BDD /* AppDelegate.m in Sources */,
 				511C88A51CCC87D9008F2BDD /* main.m in Sources */,
 				517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */,
@@ -373,6 +411,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KuaiYiSuper/PrefixHeader.pch";
 				INFOPLIST_FILE = KuaiYiSuper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoZhi.KuaiYiSuper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,6 +426,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KuaiYiSuper/PrefixHeader.pch";
 				INFOPLIST_FILE = KuaiYiSuper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoZhi.KuaiYiSuper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

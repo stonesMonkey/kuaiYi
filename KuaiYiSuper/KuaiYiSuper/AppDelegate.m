@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "KYMasterVc.h"
+#import "KYNavigationVc.h"
 @interface AppDelegate ()
 
 
@@ -19,8 +20,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // 创建爱你主窗口
-//    self.window = [[UIWindow alloc] initWithFrame:<#(CGRect)#>];
+    
+    // 创建主窗口
+    self.window = [[UIWindow alloc] initWithFrame:KYScreenBounds];
+    
+    KYMasterVc *masterVc = [[KYMasterVc alloc] init];
+    
+//    masterVc.view.backgroundColor = [UIColor colorwith];
+    
+    KYNavigationVc *nav = [[KYNavigationVc alloc] initWithRootViewController:masterVc];
+    
+    // 设置属性
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

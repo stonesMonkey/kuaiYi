@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    self.navigationItem.title = KYMasterVcTitle;
 }
 
 - (void)didReceiveMemoryWarning {
