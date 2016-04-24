@@ -26,7 +26,7 @@
     
     KYMasterVc *masterVc = [[KYMasterVc alloc] init];
     
-//    masterVc.view.backgroundColor = [UIColor colorwith];
+    masterVc.view.backgroundColor = [UIColor redColor];
     
     KYNavigationVc *nav = [[KYNavigationVc alloc] initWithRootViewController:masterVc];
     

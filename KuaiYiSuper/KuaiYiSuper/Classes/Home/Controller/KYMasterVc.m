@@ -7,8 +7,10 @@
 //
 
 #import "KYMasterVc.h"
-
+#import "KYMasterTopView.h"
 @interface KYMasterVc ()
+
+
 
 @end
 
@@ -18,12 +20,28 @@
     [super viewDidLoad];
     
     self.navigationItem.title = KYMasterVcTitle;
+    
+    [self setupSubView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (void)setupSubView {
+    
+    KYMasterTopView *topView = [KYMasterTopView masterTopView];
+    [self.view addSubview:topView];
+    
+    // 添加约束
+    [topView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        make.top.equalTo(self.view);
+        make.height.mas_equalTo(KYMasterTopViewHeight);
+    }];
+    
     
 }
+
+
 
 
 

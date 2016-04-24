@@ -13,3 +13,7 @@
 NSString * const KYMasterVcTitle = @"快医";
 
 CGFloat const KYNavgationBarTitleFontSize = 19;
+
+CGFloat const KYMasterTopViewHeight = 250;
+
+NSString * const KYShowCollectionViewCellIdentifier = @"KYShowCollectionViewCellIdentifier";
