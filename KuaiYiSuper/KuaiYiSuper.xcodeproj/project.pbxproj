@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		511C88A51CCC87D9008F2BDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C88A41CCC87D9008F2BDD /* main.m */; };
 		511C88A81CCC87D9008F2BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C88A71CCC87D9008F2BDD /* AppDelegate.m */; };
-		511C88AB1CCC87D9008F2BDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C88AA1CCC87D9008F2BDD /* ViewController.m */; };
-		511C88AE1CCC87D9008F2BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511C88AC1CCC87D9008F2BDD /* Main.storyboard */; };
 		511C88B01CCC87D9008F2BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511C88AF1CCC87D9008F2BDD /* Assets.xcassets */; };
-		511C88B31CCC87D9008F2BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511C88B11CCC87D9008F2BDD /* LaunchScreen.storyboard */; };
+		517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FBA1CCC953300AE9372 /* KYMasterVc.m */; };
+		517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FC01CCCACA200AE9372 /* KYConst.m */; };
 		883088B8D255FCBE799C5F2A /* libPods-KuaiYiSuper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CFF8C3C7370EFA6CEA0E9 /* libPods-KuaiYiSuper.a */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +20,13 @@
 		511C88A41CCC87D9008F2BDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		511C88A61CCC87D9008F2BDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		511C88A71CCC87D9008F2BDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		511C88A91CCC87D9008F2BDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		511C88AA1CCC87D9008F2BDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		511C88AD1CCC87D9008F2BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		511C88AF1CCC87D9008F2BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		511C88B21CCC87D9008F2BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		511C88B41CCC87D9008F2BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517F3FB91CCC953300AE9372 /* KYMasterVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMasterVc.h; sourceTree = "<group>"; };
+		517F3FBA1CCC953300AE9372 /* KYMasterVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMasterVc.m; sourceTree = "<group>"; };
+		517F3FBD1CCC963000AE9372 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		517F3FBF1CCCACA200AE9372 /* KYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYConst.h; sourceTree = "<group>"; };
+		517F3FC01CCCACA200AE9372 /* KYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYConst.m; sourceTree = "<group>"; };
 		6F1CFF8C3C7370EFA6CEA0E9 /* libPods-KuaiYiSuper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KuaiYiSuper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89B5DCECB3E65E886885D71 /* Pods-KuaiYiSuper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiYiSuper.release.xcconfig"; path = "Pods/Target Support Files/Pods-KuaiYiSuper/Pods-KuaiYiSuper.release.xcconfig"; sourceTree = "<group>"; };
 		E04C2BA99046DFF22DD17AA4 /* Pods-KuaiYiSuper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiYiSuper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KuaiYiSuper/Pods-KuaiYiSuper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,14 +73,9 @@
 		511C88A21CCC87D9008F2BDD /* KuaiYiSuper */ = {
 			isa = PBXGroup;
 			children = (
+				517F3FB41CCC951C00AE9372 /* Classes */,
 				511C88A61CCC87D9008F2BDD /* AppDelegate.h */,
 				511C88A71CCC87D9008F2BDD /* AppDelegate.m */,
-				511C88A91CCC87D9008F2BDD /* ViewController.h */,
-				511C88AA1CCC87D9008F2BDD /* ViewController.m */,
-				511C88AC1CCC87D9008F2BDD /* Main.storyboard */,
-				511C88AF1CCC87D9008F2BDD /* Assets.xcassets */,
-				511C88B11CCC87D9008F2BDD /* LaunchScreen.storyboard */,
-				511C88B41CCC87D9008F2BDD /* Info.plist */,
 				511C88A31CCC87D9008F2BDD /* Supporting Files */,
 			);
 			path = KuaiYiSuper;
@@ -89,9 +84,63 @@
 		511C88A31CCC87D9008F2BDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				511C88AF1CCC87D9008F2BDD /* Assets.xcassets */,
+				511C88B41CCC87D9008F2BDD /* Info.plist */,
 				511C88A41CCC87D9008F2BDD /* main.m */,
+				517F3FBD1CCC963000AE9372 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		517F3FB41CCC951C00AE9372 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				517F3FB51CCC951C00AE9372 /* Home */,
+				517F3FBE1CCCAC8D00AE9372 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		517F3FB51CCC951C00AE9372 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				517F3FB61CCC951C00AE9372 /* Controller */,
+				517F3FB71CCC951C00AE9372 /* Model */,
+				517F3FB81CCC951C00AE9372 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		517F3FB61CCC951C00AE9372 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				517F3FB91CCC953300AE9372 /* KYMasterVc.h */,
+				517F3FBA1CCC953300AE9372 /* KYMasterVc.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		517F3FB71CCC951C00AE9372 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		517F3FB81CCC951C00AE9372 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		517F3FBE1CCCAC8D00AE9372 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				517F3FBF1CCCACA200AE9372 /* KYConst.h */,
+				517F3FC01CCCACA200AE9372 /* KYConst.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		7B954A64E3AAE96293F3AFFB /* Pods */ = {
@@ -163,9 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511C88B31CCC87D9008F2BDD /* LaunchScreen.storyboard in Resources */,
 				511C88B01CCC87D9008F2BDD /* Assets.xcassets in Resources */,
-				511C88AE1CCC87D9008F2BDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,32 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511C88AB1CCC87D9008F2BDD /* ViewController.m in Sources */,
+				517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */,
 				511C88A81CCC87D9008F2BDD /* AppDelegate.m in Sources */,
 				511C88A51CCC87D9008F2BDD /* main.m in Sources */,
+				517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		511C88AC1CCC87D9008F2BDD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				511C88AD1CCC87D9008F2BDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		511C88B11CCC87D9008F2BDD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				511C88B21CCC87D9008F2BDD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		511C88B51CCC87D9008F2BDD /* Debug */ = {
@@ -342,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KuaiYiSuper/PrefixHeader.pch";
 				INFOPLIST_FILE = KuaiYiSuper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoZhi.KuaiYiSuper;
@@ -355,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KuaiYiSuper/PrefixHeader.pch";
 				INFOPLIST_FILE = KuaiYiSuper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoZhi.KuaiYiSuper;

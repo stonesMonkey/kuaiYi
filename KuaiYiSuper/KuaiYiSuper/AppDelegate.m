@@ -10,13 +10,18 @@
 
 @interface AppDelegate ()
 
+
+
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 创建爱你主窗口
+//    self.window = [[UIWindow alloc] initWithFrame:<#(CGRect)#>];
+    
     return YES;
 }
 

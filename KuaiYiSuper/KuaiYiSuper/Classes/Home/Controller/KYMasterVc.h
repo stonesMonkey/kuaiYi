@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  KYMasterVc.h
 //  KuaiYiSuper
 //
 //  Created by WZZ on 16/4/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface KYMasterVc : UIViewController
 
 @end
-
