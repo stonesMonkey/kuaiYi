@@ -48,15 +48,37 @@
 
 - (void)awakeFromNib {
     
+#warning 这个数据稍后需要处理一下
+    // 设置showFlow
+    self.showFlow.itemSize = CGSizeMake(KYScreenW, 179.5);
+    self.showFlow.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.showFlow.minimumLineSpacing = 0;
+    self.showFlow.minimumInteritemSpacing = 0;
+    
+    // 设置collectionView
     self.showImageCollectionView.delegate = self;
     self.showImageCollectionView.dataSource = self;
+    // 滚动方向
+    self.showImageCollectionView.pagingEnabled = YES;
+    self.showImageCollectionView.showsHorizontalScrollIndicator = NO;
     
     [self.showImageCollectionView registerClass:[KYShowCollectionViewCell class] forCellWithReuseIdentifier:KYShowCollectionViewCellIdentifier];
     
-    
+    dispatch_async(dispatch_get_main_queue(), ^{
+       
+        // 等线程有空滚动到最后到中间
+        CGPoint point = CGPointMake(500 * KYScreenW, 0);
+        [self.showImageCollectionView setContentOffset:point animated:NO];
+    });
 }
 
 #pragma mark - collectionView数据源方法
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    
+    return 1000;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     return 3;
@@ -66,11 +88,7 @@
     
     KYShowCollectionViewCell *cell = [self.showImageCollectionView dequeueReusableCellWithReuseIdentifier:KYShowCollectionViewCellIdentifier forIndexPath:indexPath];
     cell.backgroundColor = KYRandomColor;
-    if (indexPath.row == 1) {
-        
-        cell.backgroundColor = [UIColor redColor];
-    }
-    
+
     return cell;
 }
 

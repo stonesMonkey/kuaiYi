@@ -72,7 +72,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hSW-2X-03m">
-                    <rect key="frame" x="168" y="318" width="39" height="37"/>
+                    <rect key="frame" x="168" y="323" width="39" height="37"/>
                     <color key="pageIndicatorTintColor" red="0.21960784310000001" green="0.69411764710000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="currentPageIndicatorTintColor" red="1" green="0.19422408350000001" blue="0.17696140569999999" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
@@ -83,7 +83,7 @@
                 <constraint firstItem="hSW-2X-03m" firstAttribute="centerX" secondItem="GvW-Ra-A2C" secondAttribute="centerX" id="66H-TS-3W5"/>
                 <constraint firstItem="Ykb-bu-Rqs" firstAttribute="top" secondItem="2mQ-s7-Emr" secondAttribute="bottom" id="bc2-1b-ABh"/>
                 <constraint firstItem="2mQ-s7-Emr" firstAttribute="top" secondItem="GvW-Ra-A2C" secondAttribute="top" id="i9J-Tn-WZr"/>
-                <constraint firstAttribute="bottom" secondItem="hSW-2X-03m" secondAttribute="bottom" constant="15" id="v31-pb-WZj"/>
+                <constraint firstAttribute="bottom" secondItem="hSW-2X-03m" secondAttribute="bottom" constant="10" id="v31-pb-WZj"/>
                 <constraint firstAttribute="bottom" secondItem="Ykb-bu-Rqs" secondAttribute="bottom" id="y1f-8p-4HN"/>
                 <constraint firstItem="Ykb-bu-Rqs" firstAttribute="leading" secondItem="GvW-Ra-A2C" secondAttribute="leading" id="z51-wO-AhQ"/>
                 <constraint firstAttribute="trailing" secondItem="Ykb-bu-Rqs" secondAttribute="trailing" id="zHK-8K-U30"/>
