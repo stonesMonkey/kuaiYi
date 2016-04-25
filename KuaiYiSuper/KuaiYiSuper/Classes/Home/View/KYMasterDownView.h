@@ -10,6 +10,6 @@
 
 @interface KYMasterDownView : UIView
 
-+ (instancetype)masterTopView;
++ (instancetype)masterDownView;
 
 @end

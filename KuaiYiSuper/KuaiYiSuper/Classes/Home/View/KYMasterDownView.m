@@ -21,9 +21,9 @@
 
 @implementation KYMasterDownView
 
-+ (instancetype)masterTopView {
++ (instancetype)masterDownView {
     
-    return KYLoadNib(@"KYMasterTopView");
+    return KYLoadNib(@"KYMasterDownView");
 }
 
 
@@ -31,10 +31,14 @@
     
     // 设置 moduleFlowLayout 属性
     self.moduleFlowLayout.itemSize = CGSizeMake(KYScreenW / 3.0, KYScreenW / 3.0);
+    self.moduleFlowLayout.minimumLineSpacing = 0;
+    self.moduleFlowLayout.minimumInteritemSpacing = 0;
     
     // 设置 moduleCollectionView属性
     self.moduleCollectionView.delegate = self;
     self.moduleCollectionView.dataSource = self;
+    self.moduleCollectionView.bounces = NO;
+    self.moduleCollectionView.showsHorizontalScrollIndicator = NO;
     [self.moduleCollectionView registerClass:[KYModuleCollectionViewCell class] forCellWithReuseIdentifier:KYModuleCollectionViewCellIdentifer];
 }
 
