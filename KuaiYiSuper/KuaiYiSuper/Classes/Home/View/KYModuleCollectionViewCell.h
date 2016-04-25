@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class KYMasterDownModel;
 @interface KYModuleCollectionViewCell : UICollectionViewCell
 
-
+@property(nonatomic,strong)KYMasterDownModel *downModel;
 
 @end

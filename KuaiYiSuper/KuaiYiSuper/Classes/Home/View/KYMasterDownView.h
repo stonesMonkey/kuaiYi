@@ -12,4 +12,6 @@
 
 + (instancetype)masterDownView;
 
+@property(nonatomic,strong)NSArray *downViewModels;
+
 @end

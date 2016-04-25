@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>肿瘤</string>
+		<key>icon</key>
+		<string>zl</string>
+		<key>jumpClass</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>心血管</string>
+		<key>icon</key>
+		<string>xyg</string>
+		<key>jumpClass</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>神经科</string>
+		<key>icon</key>
+		<string>sj</string>
+		<key>jumpClass</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>血液科</string>
+		<key>icon</key>
+		<string>xy</string>
+		<key>jumpClass</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>骨科</string>
+		<key>icon</key>
+		<string>gt</string>
+		<key>jumpClass</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>公益活动</string>
+		<key>icon</key>
+		<string>gy</string>
+		<key>jumpClass</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

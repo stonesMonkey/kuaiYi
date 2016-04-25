@@ -21,4 +21,4 @@ CGFloat const KYMasterTopMessageHeight = 70.5;
 
 NSString * const KYShowCollectionViewCellIdentifier = @"KYShowCollectionViewCellIdentifier";
 
-NSString * const KYModuleCollectionViewCellIdentifer = @"NSString * const KYModuleCollectionViewCellIdentifer";
+NSString * const KYModuleCollectionViewCellIdentifer = @"KYModuleCollectionViewCellIdentifer";

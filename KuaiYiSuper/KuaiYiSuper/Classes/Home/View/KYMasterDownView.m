@@ -9,6 +9,7 @@
 #import "KYMasterDownView.h"
 #import "KYModuleCollectionView.h"
 #import "KYModuleCollectionViewCell.h"
+#import "KYMasterDownModel.h"
 #import "KYModuleFlowLayout.h"
 @interface KYMasterDownView()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -39,21 +40,32 @@
     self.moduleCollectionView.dataSource = self;
     self.moduleCollectionView.bounces = NO;
     self.moduleCollectionView.showsHorizontalScrollIndicator = NO;
-    [self.moduleCollectionView registerClass:[KYModuleCollectionViewCell class] forCellWithReuseIdentifier:KYModuleCollectionViewCellIdentifer];
+    
+    UINib *nib = [UINib nibWithNibName:@"KYModuleCollectionViewCell" bundle:nil];
+    [self.moduleCollectionView registerNib:nib forCellWithReuseIdentifier:KYModuleCollectionViewCellIdentifer];
 }
 
 #pragma mark - KYModuleCollection数据源方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return 6;
+    return self.downViewModels.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     KYModuleCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KYModuleCollectionViewCellIdentifer forIndexPath:indexPath];
     cell.backgroundColor = KYRandomColor;
-    
+    cell.downModel = self.downViewModels[indexPath.row];
     return cell;
+}
+
+
+#pragma mark - set &get
+- (void)setDownViewModels:(NSArray *)downViewModels {
+    
+    _downViewModels = downViewModels;
+    
+    [self.moduleCollectionView reloadData];
 }
 
 

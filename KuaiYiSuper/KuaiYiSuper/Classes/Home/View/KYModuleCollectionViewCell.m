@@ -7,37 +7,33 @@
 //
 
 #import "KYModuleCollectionViewCell.h"
-
+#import "DownCellBtn.h"
+#import "kymasterdownModel.h"
 @interface KYModuleCollectionViewCell()
 
-@property(nonatomic,weak)UIButton *btnView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 
 @end
 
 @implementation KYModuleCollectionViewCell
 
-- (instancetype)initWithFrame:(CGRect)frame {
+
+
+
+
+- (void)setDownModel:(KYMasterDownModel *)downModel {
     
-    if (self = [super initWithFrame:frame]) {
-        
-        [self setupSubView];
-    }
-    return self;
+    _downModel = downModel;
+    
+    self.imageView.image = [UIImage imageNamed:downModel.icon];
+    
+    self.titleLabel.text = downModel.name;
 }
 
-- (void)setupSubView {
-    
-    UIButton *btnView = [[UIButton alloc] init];
-    
-    [self.contentView addSubview:btnView];
-    self.btnView = btnView;
-    
-    [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
-      
-        make.top.equalTo(self.contentView);
-    }];
-    
-}
 
 
 @end

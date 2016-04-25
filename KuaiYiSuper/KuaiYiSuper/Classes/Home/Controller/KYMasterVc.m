@@ -9,6 +9,7 @@
 #import "KYMasterVc.h"
 #import "KYMasterTopView.h"
 #import "KYMasterDownView.h"
+#import "KYMasterDownModel.h"
 @interface KYMasterVc ()
 
 //
@@ -16,6 +17,9 @@
 
 //
 @property(nonatomic,weak)KYMasterDownView *downView;
+
+//
+@property(nonatomic,strong)NSArray *modelDowns;
 
 @end
 
@@ -26,7 +30,10 @@
     
     self.navigationItem.title = KYMasterVcTitle;
     
+    // 设定属性
     [self setupSubView];
+    // 给每个属性赋值
+    [self setupData];
 }
 
 - (void)setupSubView {
@@ -54,7 +61,21 @@
         make.bottom.equalTo(self.view);
     }];
     
+}
+
+- (void)setupData {
     
+    self.downView.downViewModels = self.modelDowns;
+}
+
+#pragma mark - set &get
+- (NSArray *)modelDowns {
+    
+    if (_modelDowns == nil) {
+        
+        _modelDowns  = [KYMasterDownModel masterDownModels];
+    }
+    return _modelDowns;
 }
 
 
