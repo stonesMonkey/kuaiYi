@@ -7,12 +7,17 @@
 //
 
 #import "KYLoginVc.h"
-
+#import "KYRegisterView.h"
 @interface KYLoginVc ()
 
 @end
 
 @implementation KYLoginVc
+
+- (void)loadView {
+    
+    self.view = [KYRegisterView registerView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

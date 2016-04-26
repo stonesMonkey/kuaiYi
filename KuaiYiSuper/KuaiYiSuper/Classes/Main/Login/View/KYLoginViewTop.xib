@@ -27,6 +27,9 @@
                         <constraint firstAttribute="height" constant="45" id="w28-3E-3VY"/>
                     </constraints>
                     <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="dengLuBtn:" destination="54G-F6-k56" eventType="touchUpInside" id="yvl-qa-dky"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoZ-3C-KzN">
                     <rect key="frame" x="172" y="55" width="45" height="45"/>
@@ -35,6 +38,9 @@
                         <constraint firstAttribute="width" constant="45" id="V0b-i1-sxH"/>
                     </constraints>
                     <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="registBtnClick:" destination="54G-F6-k56" eventType="touchUpInside" id="MMx-Vt-gCP"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.12549019607843137" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>

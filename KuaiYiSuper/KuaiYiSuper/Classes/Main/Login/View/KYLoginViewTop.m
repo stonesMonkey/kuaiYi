@@ -15,4 +15,22 @@
     return KYLoadNib(@"KYLoginViewTop");
 }
 
+- (IBAction)dengLuBtn:(UIButton *)sender {
+    
+    if (self.loginBtnDidBlcok != nil) {
+        
+        self.loginBtnDidBlcok();
+    }
+}
+
+
+- (IBAction)registBtnClick:(UIButton *)sender {
+    
+    if (self.registBtnDidBlcok != nil) {
+        
+        self.registBtnDidBlcok();
+    }
+}
+
+
 @end

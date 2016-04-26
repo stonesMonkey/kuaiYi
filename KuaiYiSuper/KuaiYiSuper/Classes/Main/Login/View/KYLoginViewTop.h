@@ -10,6 +10,10 @@
 
 @interface KYLoginViewTop : UIView
 
+@property(nonatomic,copy)void(^loginBtnDidBlcok)();
+
+@property(nonatomic,copy)void(^registBtnDidBlcok)();
+
 + (instancetype)loginViewTop;
 
 @end
