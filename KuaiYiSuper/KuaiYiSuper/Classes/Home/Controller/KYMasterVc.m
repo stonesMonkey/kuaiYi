@@ -9,7 +9,7 @@
 #import "KYMasterVc.h"
 #import "KYMasterTopView.h"
 #import "KYMasterDownView.h"
-#import "KYLoginVc.h"
+#import "KYUserVc.h"
 #import "KYMasterDownModel.h"
 @interface KYMasterVc ()
 
@@ -85,9 +85,9 @@
 - (void)leftBarButtonDidClick {
     
 #warning 暂时用model来跳转控制器吧
-    KYLoginVc *login = [[KYLoginVc alloc] init];
-    login.view.backgroundColor = [UIColor whiteColor];
-    [self presentViewController:login animated:YES completion:nil];
+    KYUserVc *user = [[KYUserVc alloc] init];
+    user.view.backgroundColor = [UIColor whiteColor];
+    [self presentViewController:user animated:YES completion:nil];
 }
 
 #pragma mark - set &get

@@ -29,9 +29,12 @@
 		51D0F2931CCDE44C00EE80AE /* KYModuleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D0F2921CCDE44C00EE80AE /* KYModuleCollectionViewCell.xib */; };
 		51D0F2EB1CCF2C9700EE80AE /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2E41CCF2C9700EE80AE /* UIView+Extension.m */; };
 		51D0F2EC1CCF2C9700EE80AE /* KYNavigationVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2E71CCF2C9700EE80AE /* KYNavigationVc.m */; };
-		51D0F2F21CCF2CFA00EE80AE /* KYLoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2F11CCF2CFA00EE80AE /* KYLoginVc.m */; };
+		51D0F2F21CCF2CFA00EE80AE /* KYUserVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2F11CCF2CFA00EE80AE /* KYUserVc.m */; };
 		51D0F2F51CCF2E0C00EE80AE /* KYLoginViewTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2F41CCF2E0C00EE80AE /* KYLoginViewTop.m */; };
 		51D0F2F71CCF2E2200EE80AE /* KYLoginViewTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D0F2F61CCF2E2200EE80AE /* KYLoginViewTop.xib */; };
+		51D0F2FA1CCF37B900EE80AE /* KYLoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2F91CCF37B900EE80AE /* KYLoginVc.m */; };
+		51D0F2FC1CCF380300EE80AE /* KYRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D0F2FB1CCF380300EE80AE /* KYRegisterView.xib */; };
+		51D0F2FF1CCF3D9C00EE80AE /* KYRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2FE1CCF3D9C00EE80AE /* KYRegisterView.m */; };
 		883088B8D255FCBE799C5F2A /* libPods-KuaiYiSuper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CFF8C3C7370EFA6CEA0E9 /* libPods-KuaiYiSuper.a */; };
 /* End PBXBuildFile section */
 
@@ -77,11 +80,16 @@
 		51D0F2E41CCF2C9700EE80AE /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		51D0F2E61CCF2C9700EE80AE /* KYNavigationVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNavigationVc.h; sourceTree = "<group>"; };
 		51D0F2E71CCF2C9700EE80AE /* KYNavigationVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYNavigationVc.m; sourceTree = "<group>"; };
-		51D0F2F01CCF2CFA00EE80AE /* KYLoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginVc.h; sourceTree = "<group>"; };
-		51D0F2F11CCF2CFA00EE80AE /* KYLoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginVc.m; sourceTree = "<group>"; };
+		51D0F2F01CCF2CFA00EE80AE /* KYUserVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUserVc.h; sourceTree = "<group>"; };
+		51D0F2F11CCF2CFA00EE80AE /* KYUserVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserVc.m; sourceTree = "<group>"; };
 		51D0F2F31CCF2E0C00EE80AE /* KYLoginViewTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginViewTop.h; sourceTree = "<group>"; };
 		51D0F2F41CCF2E0C00EE80AE /* KYLoginViewTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginViewTop.m; sourceTree = "<group>"; };
 		51D0F2F61CCF2E2200EE80AE /* KYLoginViewTop.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYLoginViewTop.xib; sourceTree = "<group>"; };
+		51D0F2F81CCF37B900EE80AE /* KYLoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginVc.h; sourceTree = "<group>"; };
+		51D0F2F91CCF37B900EE80AE /* KYLoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginVc.m; sourceTree = "<group>"; };
+		51D0F2FB1CCF380300EE80AE /* KYRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KYRegisterView.xib; path = ../Controller/KYRegisterView.xib; sourceTree = "<group>"; };
+		51D0F2FD1CCF3D9C00EE80AE /* KYRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYRegisterView.h; sourceTree = "<group>"; };
+		51D0F2FE1CCF3D9C00EE80AE /* KYRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYRegisterView.m; sourceTree = "<group>"; };
 		6F1CFF8C3C7370EFA6CEA0E9 /* libPods-KuaiYiSuper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KuaiYiSuper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89B5DCECB3E65E886885D71 /* Pods-KuaiYiSuper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiYiSuper.release.xcconfig"; path = "Pods/Target Support Files/Pods-KuaiYiSuper/Pods-KuaiYiSuper.release.xcconfig"; sourceTree = "<group>"; };
 		E04C2BA99046DFF22DD17AA4 /* Pods-KuaiYiSuper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiYiSuper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KuaiYiSuper/Pods-KuaiYiSuper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,8 +322,10 @@
 		51D0F2ED1CCF2CE600EE80AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				51D0F2F01CCF2CFA00EE80AE /* KYLoginVc.h */,
-				51D0F2F11CCF2CFA00EE80AE /* KYLoginVc.m */,
+				51D0F2F01CCF2CFA00EE80AE /* KYUserVc.h */,
+				51D0F2F11CCF2CFA00EE80AE /* KYUserVc.m */,
+				51D0F2F81CCF37B900EE80AE /* KYLoginVc.h */,
+				51D0F2F91CCF37B900EE80AE /* KYLoginVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,6 +343,9 @@
 				51D0F2F31CCF2E0C00EE80AE /* KYLoginViewTop.h */,
 				51D0F2F41CCF2E0C00EE80AE /* KYLoginViewTop.m */,
 				51D0F2F61CCF2E2200EE80AE /* KYLoginViewTop.xib */,
+				51D0F2FD1CCF3D9C00EE80AE /* KYRegisterView.h */,
+				51D0F2FE1CCF3D9C00EE80AE /* KYRegisterView.m */,
+				51D0F2FB1CCF380300EE80AE /* KYRegisterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,6 +425,7 @@
 				51D0F28C1CCDD9F500EE80AE /* KYMasterDownModel.plist in Resources */,
 				51D0F2F71CCF2E2200EE80AE /* KYLoginViewTop.xib in Resources */,
 				511C88B01CCC87D9008F2BDD /* Assets.xcassets in Resources */,
+				51D0F2FC1CCF380300EE80AE /* KYRegisterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D0F2FA1CCF37B900EE80AE /* KYLoginVc.m in Sources */,
 				517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */,
 				51D0F2F51CCF2E0C00EE80AE /* KYLoginViewTop.m in Sources */,
 				517F3FD31CCCEC8D00AE9372 /* KYShowCollectionViewCell.m in Sources */,
@@ -481,12 +496,13 @@
 				517F3FDA1CCCF9D800AE9372 /* KYFlowLayout.m in Sources */,
 				51D0F28F1CCDDD7F00EE80AE /* DownCellBtn.m in Sources */,
 				511C88A51CCC87D9008F2BDD /* main.m in Sources */,
-				51D0F2F21CCF2CFA00EE80AE /* KYLoginVc.m in Sources */,
+				51D0F2F21CCF2CFA00EE80AE /* KYUserVc.m in Sources */,
 				517F3FEB1CCD098500AE9372 /* KYModuleCollectionViewCell.m in Sources */,
 				517F3FE21CCD06AB00AE9372 /* KYMasterDownView.m in Sources */,
 				517F3FD01CCCEC5B00AE9372 /* KYShowCollectionView.m in Sources */,
 				517F3FE81CCD096200AE9372 /* KYModuleCollectionView.m in Sources */,
 				517F3FCB1CCCC8DE00AE9372 /* KYMasterTopView.m in Sources */,
+				51D0F2FF1CCF3D9C00EE80AE /* KYRegisterView.m in Sources */,
 				51D0F2EB1CCF2C9700EE80AE /* UIView+Extension.m in Sources */,
 				517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */,
 			);

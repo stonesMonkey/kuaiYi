@@ -7,22 +7,22 @@
 //
 
 #import "KYLoginVc.h"
-#import "KYLoginViewTop.h"
+
+@interface KYLoginVc ()
+
+@end
+
 @implementation KYLoginVc
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    //
-    [self setupSubView];
+    // Do any additional setup after loading the view.
 }
 
-- (void)setupSubView {
-    
-    // 创建一个view
-    KYLoginViewTop *top = [KYLoginViewTop loginViewTop];
-    top.frame = CGRectMake(0, 0, KYScreenW, 100);
-    [self.view addSubview:top];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
+
 
 @end

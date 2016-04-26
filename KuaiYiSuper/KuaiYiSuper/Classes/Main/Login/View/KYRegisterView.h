@@ -1,5 +1,5 @@
 //
-//  KYLoginVc.h
+//  KYRegisterView.h
 //  KuaiYiSuper
 //
 //  Created by WZZ on 16/4/26.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KYLoginVc : UIViewController
+@interface KYRegisterView : UIView
+
++ (instancetype)registerView;
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KYLoginVc : UIViewController
+@interface KYUserVc : UIViewController
+
+
 
 @end
