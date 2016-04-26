@@ -9,6 +9,7 @@
 #import "KYMasterVc.h"
 #import "KYMasterTopView.h"
 #import "KYMasterDownView.h"
+#import "KYLoginVc.h"
 #import "KYMasterDownModel.h"
 @interface KYMasterVc ()
 
@@ -29,13 +30,16 @@
     [super viewDidLoad];
     
     self.navigationItem.title = KYMasterVcTitle;
+    // 添加右边按钮
     
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self leftBarButton]];
     // 设定属性
     [self setupSubView];
     // 给每个属性赋值
     [self setupData];
 }
 
+#pragma mark - 添加子控件的方法
 - (void)setupSubView {
     
     KYMasterTopView *topView = [KYMasterTopView masterTopView];
@@ -63,9 +67,27 @@
     
 }
 
+- (UIButton *)leftBarButton {
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn addTarget:self action:@selector(leftBarButtonDidClick) forControlEvents:UIControlEventTouchDown];
+    [btn setBackgroundImage:[UIImage imageNamed:@"l"] forState:UIControlStateNormal];
+    btn.frame = CGRectMake(0, 0, 20, 13);
+    return btn;
+}
+
 - (void)setupData {
     
     self.downView.downViewModels = self.modelDowns;
+}
+
+#pragma mark - action
+- (void)leftBarButtonDidClick {
+    
+#warning 暂时用model来跳转控制器吧
+    KYLoginVc *login = [[KYLoginVc alloc] init];
+    login.view.backgroundColor = [UIColor whiteColor];
+    [self presentViewController:login animated:YES completion:nil];
 }
 
 #pragma mark - set &get
