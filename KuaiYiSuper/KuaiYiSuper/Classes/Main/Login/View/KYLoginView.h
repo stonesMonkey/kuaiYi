@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KYRegisterView : UIView
+@interface KYLoginView : UIView
 
-+ (instancetype)rigistView;
++ (instancetype)registerView;
 
-@end  
+@end

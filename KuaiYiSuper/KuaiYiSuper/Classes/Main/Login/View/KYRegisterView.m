@@ -10,7 +10,7 @@
 
 @implementation KYRegisterView
 
-+ (instancetype)registerView {
++ (instancetype)rigistView {
     
     return KYLoadNib(@"KYRegisterView");
 }

@@ -31,7 +31,8 @@
         // 跳转到登录界面
         KYLoginVc *loginVc = [[KYLoginVc alloc] init];
         loginVc.view.backgroundColor = [UIColor redColor];
-        [mySelf presentViewController:loginVc animated:YES completion:nil];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVc];
+        [mySelf presentViewController:nav animated:YES completion:nil];
     }];
     top.frame = CGRectMake(0, 0, KYScreenW, 100);
     [self.view addSubview:top];
