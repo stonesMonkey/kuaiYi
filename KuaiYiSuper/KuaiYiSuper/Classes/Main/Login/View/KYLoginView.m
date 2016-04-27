@@ -7,7 +7,7 @@
 //
 
 #import "KYLoginView.h"
-
+#import "KYNoteViewControler.h"
 @interface KYLoginView()
 
 @property (weak, nonatomic) IBOutlet UITextField *userTextField;
@@ -43,19 +43,20 @@
 // 通过短信验证按钮
 - (IBAction)noteBtnClick:(UIButton *)sender {
     
-    
+    self.noteBtnClickBlock();
 }
 
 // 注册新账号按钮
 - (IBAction)registBtn:(UIButton *)sender {
     
+    self.registBtnClickBlock();
     
 }
 
 // 忘记密码按钮
 - (IBAction)forgetPassWord:(UIButton *)sender {
     
-    
+    self.forgetPassWordBlock();
 }
 
 

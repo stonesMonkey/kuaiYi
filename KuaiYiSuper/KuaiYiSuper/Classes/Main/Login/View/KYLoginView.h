@@ -10,6 +10,12 @@
 
 @interface KYLoginView : UIView
 
+@property(nonatomic,copy)void(^noteBtnClickBlock)();
+
+@property(nonatomic,copy)void(^registBtnClickBlock)();
+
+@property(nonatomic,copy)void(^forgetPassWordBlock)();
+
 + (instancetype)registerView;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "KYLoginVc.h"
 #import "KYLoginView.h"
+#import "KYNoteViewControler.h"
 @interface KYLoginVc ()
 
 @end
@@ -17,8 +18,19 @@
 - (void)loadView {
     
         
-        self.view = [KYLoginView registerView];
+    KYLoginView *loginView = [KYLoginView registerView];
+    loginView.noteBtnClickBlock = ^ {
+        
+        KYNoteViewControler *noteVc = [[KYNoteViewControler alloc] init];
+        noteVc.view.backgroundColor = [UIColor blueColor];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:noteVc];
+        [self presentViewController:nav animated:YES completion:nil];
+    };
+    
+    
+    self.view = loginView;
         // 添加返回按钮
+    
 }
 
 
