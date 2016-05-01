@@ -1,28 +1,28 @@
 //
-//  KYNoteViewControler.m
+//  KYForgetPasswordVc.m
 //  KuaiYiSuper
 //
-//  Created by WZZ on 16/4/27.
+//  Created by WZZ on 16/5/1.
 //  Copyright © 2016年 WZZ. All rights reserved.
 //
 
-#import "KYNoteViewControler.h"
+#import "KYForgetPasswordVc.h"
 
-@interface KYNoteViewControler ()
+@interface KYForgetPasswordVc ()
 
 @end
 
-@implementation KYNoteViewControler
+@implementation KYForgetPasswordVc
 
 - (void)loadView {
     
-    self.view = KYLoadNib(@"KYNoteView");
+    self.view = KYLoadNib(@"KYForGetPassWord");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"注册登录";
+    self.title = @"忘记密码";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self setuoRightBtn]];
 }
 
@@ -50,4 +50,6 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 @end

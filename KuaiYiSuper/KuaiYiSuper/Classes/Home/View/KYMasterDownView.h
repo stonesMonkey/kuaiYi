@@ -12,6 +12,9 @@
 
 + (instancetype)masterDownView;
 
+// 跳转控制器
+@property(nonatomic,copy)void(^jumpSickModuleVc)(NSString *classStr,NSString *sickName);
+
 @property(nonatomic,strong)NSArray *downViewModels;
 
 @end

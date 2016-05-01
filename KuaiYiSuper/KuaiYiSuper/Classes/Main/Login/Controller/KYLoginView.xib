@@ -55,6 +55,9 @@
                         <constraint firstAttribute="height" constant="30" id="nRT-xV-bwZ"/>
                     </constraints>
                     <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="loginBtnDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="0rG-bJ-XXV"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf4-OP-6Ta">
                     <rect key="frame" x="85" y="472" width="75" height="30"/>

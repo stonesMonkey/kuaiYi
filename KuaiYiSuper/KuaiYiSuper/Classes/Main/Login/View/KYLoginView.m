@@ -60,6 +60,10 @@
 }
 
 
+- (IBAction)loginBtnDidClick:(UIButton *)sender {
+    
+    self.loginBtnDidClickBlock(self.userTextField.text,self.passWordField.text);
+}
 
 
 @end

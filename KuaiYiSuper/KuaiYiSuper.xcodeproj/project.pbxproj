@@ -10,8 +10,19 @@
 		511C88A51CCC87D9008F2BDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C88A41CCC87D9008F2BDD /* main.m */; };
 		511C88A81CCC87D9008F2BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C88A71CCC87D9008F2BDD /* AppDelegate.m */; };
 		511C88B01CCC87D9008F2BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511C88AF1CCC87D9008F2BDD /* Assets.xcassets */; };
+		5145AE511CD5E4A0008A1981 /* KYForGetPassWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE501CD5E4A0008A1981 /* KYForGetPassWord.m */; };
+		5145AE531CD5E4B1008A1981 /* KYForGetPassWord.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5145AE521CD5E4B1008A1981 /* KYForGetPassWord.xib */; };
+		5145AE561CD5EB1F008A1981 /* KYForgetPasswordVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE551CD5EB1F008A1981 /* KYForgetPasswordVc.m */; };
+		5145AE591CD5F090008A1981 /* KYRegisterVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE581CD5F090008A1981 /* KYRegisterVc.m */; };
+		5145AE5C1CD5F841008A1981 /* KYUserMessageVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE5B1CD5F841008A1981 /* KYUserMessageVc.m */; };
+		5145AE5E1CD5F84A008A1981 /* KYUserMessageVc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5145AE5D1CD5F84A008A1981 /* KYUserMessageVc.storyboard */; };
+		5145AE611CD610FD008A1981 /* KYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE601CD610FD008A1981 /* KYUser.m */; };
+		5145AE741CD62F98008A1981 /* KYSicknessVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE701CD62F98008A1981 /* KYSicknessVc.m */; };
+		5145AE751CD62F98008A1981 /* KYSicknessVc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5145AE711CD62F98008A1981 /* KYSicknessVc.storyboard */; };
+		5145AE781CD63137008A1981 /* KYGongYiModuleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE771CD63137008A1981 /* KYGongYiModuleVc.m */; };
 		517A58A51CD0BEB50080B9DF /* KYNoteViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A58A31CD0BEB50080B9DF /* KYNoteViewControler.m */; };
-		517A58A61CD0BEB50080B9DF /* KYNoteViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517A58A41CD0BEB50080B9DF /* KYNoteViewControler.xib */; };
+		517A58A61CD0BEB50080B9DF /* KYNoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517A58A41CD0BEB50080B9DF /* KYNoteView.xib */; };
+		517A58A91CD2060C0080B9DF /* KYNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A58A81CD2060C0080B9DF /* KYNoteView.m */; };
 		517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FBA1CCC953300AE9372 /* KYMasterVc.m */; };
 		517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FC01CCCACA200AE9372 /* KYConst.m */; };
 		517F3FCB1CCCC8DE00AE9372 /* KYMasterTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FCA1CCCC8DE00AE9372 /* KYMasterTopView.m */; };
@@ -50,9 +61,28 @@
 		511C88A71CCC87D9008F2BDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		511C88AF1CCC87D9008F2BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		511C88B41CCC87D9008F2BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		517A58A21CD0BEB50080B9DF /* KYNoteViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNoteViewControler.h; sourceTree = "<group>"; };
-		517A58A31CD0BEB50080B9DF /* KYNoteViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYNoteViewControler.m; sourceTree = "<group>"; };
-		517A58A41CD0BEB50080B9DF /* KYNoteViewControler.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYNoteViewControler.xib; sourceTree = "<group>"; };
+		5145AE4F1CD5E4A0008A1981 /* KYForGetPassWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYForGetPassWord.h; sourceTree = "<group>"; };
+		5145AE501CD5E4A0008A1981 /* KYForGetPassWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYForGetPassWord.m; sourceTree = "<group>"; };
+		5145AE521CD5E4B1008A1981 /* KYForGetPassWord.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYForGetPassWord.xib; sourceTree = "<group>"; };
+		5145AE541CD5EB1F008A1981 /* KYForgetPasswordVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYForgetPasswordVc.h; sourceTree = "<group>"; };
+		5145AE551CD5EB1F008A1981 /* KYForgetPasswordVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYForgetPasswordVc.m; sourceTree = "<group>"; };
+		5145AE571CD5F090008A1981 /* KYRegisterVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYRegisterVc.h; sourceTree = "<group>"; };
+		5145AE581CD5F090008A1981 /* KYRegisterVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYRegisterVc.m; sourceTree = "<group>"; };
+		5145AE5A1CD5F841008A1981 /* KYUserMessageVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUserMessageVc.h; sourceTree = "<group>"; };
+		5145AE5B1CD5F841008A1981 /* KYUserMessageVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserMessageVc.m; sourceTree = "<group>"; };
+		5145AE5D1CD5F84A008A1981 /* KYUserMessageVc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KYUserMessageVc.storyboard; sourceTree = "<group>"; };
+		5145AE5F1CD610FD008A1981 /* KYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUser.h; sourceTree = "<group>"; };
+		5145AE601CD610FD008A1981 /* KYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUser.m; sourceTree = "<group>"; };
+		5145AE6F1CD62F98008A1981 /* KYSicknessVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSicknessVc.h; sourceTree = "<group>"; };
+		5145AE701CD62F98008A1981 /* KYSicknessVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSicknessVc.m; sourceTree = "<group>"; };
+		5145AE711CD62F98008A1981 /* KYSicknessVc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KYSicknessVc.storyboard; sourceTree = "<group>"; };
+		5145AE761CD63137008A1981 /* KYGongYiModuleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYGongYiModuleVc.h; sourceTree = "<group>"; };
+		5145AE771CD63137008A1981 /* KYGongYiModuleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYGongYiModuleVc.m; sourceTree = "<group>"; };
+		517A58A21CD0BEB50080B9DF /* KYNoteViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYNoteViewControler.h; path = ../View/KYNoteViewControler.h; sourceTree = "<group>"; };
+		517A58A31CD0BEB50080B9DF /* KYNoteViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYNoteViewControler.m; path = ../View/KYNoteViewControler.m; sourceTree = "<group>"; };
+		517A58A41CD0BEB50080B9DF /* KYNoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYNoteView.xib; sourceTree = "<group>"; };
+		517A58A71CD2060C0080B9DF /* KYNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYNoteView.h; path = ../../View/KYNoteView.h; sourceTree = "<group>"; };
+		517A58A81CD2060C0080B9DF /* KYNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYNoteView.m; path = ../../View/KYNoteView.m; sourceTree = "<group>"; };
 		517F3FB91CCC953300AE9372 /* KYMasterVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMasterVc.h; sourceTree = "<group>"; };
 		517F3FBA1CCC953300AE9372 /* KYMasterVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMasterVc.m; sourceTree = "<group>"; };
 		517F3FBD1CCC963000AE9372 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -168,6 +198,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5145AE6D1CD62F98008A1981 /* SickModule */ = {
+			isa = PBXGroup;
+			children = (
+				5145AE6E1CD62F98008A1981 /* Controller */,
+				5145AE721CD62F98008A1981 /* Model */,
+				5145AE731CD62F98008A1981 /* View */,
+			);
+			path = SickModule;
+			sourceTree = "<group>";
+		};
+		5145AE6E1CD62F98008A1981 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5145AE6F1CD62F98008A1981 /* KYSicknessVc.h */,
+				5145AE701CD62F98008A1981 /* KYSicknessVc.m */,
+				5145AE711CD62F98008A1981 /* KYSicknessVc.storyboard */,
+				5145AE761CD63137008A1981 /* KYGongYiModuleVc.h */,
+				5145AE771CD63137008A1981 /* KYGongYiModuleVc.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5145AE721CD62F98008A1981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5145AE731CD62F98008A1981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		517F3FB41CCC951C00AE9372 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +346,7 @@
 		51D0F2E11CCF2C9700EE80AE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5145AE6D1CD62F98008A1981 /* SickModule */,
 				51D0F2E21CCF2C9700EE80AE /* Category */,
 				51D0F2E51CCF2C9700EE80AE /* Controller */,
 				51D0F2E81CCF2C9700EE80AE /* Login */,
@@ -338,6 +405,15 @@
 				51D0F2F11CCF2CFA00EE80AE /* KYUserVc.m */,
 				51D0F2F81CCF37B900EE80AE /* KYLoginVc.h */,
 				51D0F2F91CCF37B900EE80AE /* KYLoginVc.m */,
+				517A58A21CD0BEB50080B9DF /* KYNoteViewControler.h */,
+				517A58A31CD0BEB50080B9DF /* KYNoteViewControler.m */,
+				5145AE541CD5EB1F008A1981 /* KYForgetPasswordVc.h */,
+				5145AE551CD5EB1F008A1981 /* KYForgetPasswordVc.m */,
+				5145AE571CD5F090008A1981 /* KYRegisterVc.h */,
+				5145AE581CD5F090008A1981 /* KYRegisterVc.m */,
+				5145AE5A1CD5F841008A1981 /* KYUserMessageVc.h */,
+				5145AE5B1CD5F841008A1981 /* KYUserMessageVc.m */,
+				5145AE5D1CD5F84A008A1981 /* KYUserMessageVc.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +421,8 @@
 		51D0F2EE1CCF2CE600EE80AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5145AE5F1CD610FD008A1981 /* KYUser.h */,
+				5145AE601CD610FD008A1981 /* KYUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,9 +440,12 @@
 				51D0F34E1CCF77EC00EE80AE /* KYRegisterView.h */,
 				51D0F34F1CCF77EC00EE80AE /* KYRegisterView.m */,
 				51D0F3511CCF784000EE80AE /* KYRegisterView.xib */,
-				517A58A21CD0BEB50080B9DF /* KYNoteViewControler.h */,
-				517A58A31CD0BEB50080B9DF /* KYNoteViewControler.m */,
-				517A58A41CD0BEB50080B9DF /* KYNoteViewControler.xib */,
+				517A58A71CD2060C0080B9DF /* KYNoteView.h */,
+				517A58A81CD2060C0080B9DF /* KYNoteView.m */,
+				517A58A41CD0BEB50080B9DF /* KYNoteView.xib */,
+				5145AE4F1CD5E4A0008A1981 /* KYForGetPassWord.h */,
+				5145AE501CD5E4A0008A1981 /* KYForGetPassWord.m */,
+				5145AE521CD5E4B1008A1981 /* KYForGetPassWord.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -440,12 +521,15 @@
 			files = (
 				517F3FE41CCD06BA00AE9372 /* KYMasterDownView.xib in Resources */,
 				51D0F3521CCF784000EE80AE /* KYRegisterView.xib in Resources */,
+				5145AE5E1CD5F84A008A1981 /* KYUserMessageVc.storyboard in Resources */,
 				517F3FCD1CCCC8EC00AE9372 /* KYMasterTopView.xib in Resources */,
+				5145AE751CD62F98008A1981 /* KYSicknessVc.storyboard in Resources */,
+				5145AE531CD5E4B1008A1981 /* KYForGetPassWord.xib in Resources */,
 				51D0F2931CCDE44C00EE80AE /* KYModuleCollectionViewCell.xib in Resources */,
 				51D0F34D1CCF75C100EE80AE /* LeftView.xib in Resources */,
 				51D0F28C1CCDD9F500EE80AE /* KYMasterDownModel.plist in Resources */,
 				51D0F2F71CCF2E2200EE80AE /* KYLoginViewTop.xib in Resources */,
-				517A58A61CD0BEB50080B9DF /* KYNoteViewControler.xib in Resources */,
+				517A58A61CD0BEB50080B9DF /* KYNoteView.xib in Resources */,
 				511C88B01CCC87D9008F2BDD /* Assets.xcassets in Resources */,
 				51D0F2FC1CCF380300EE80AE /* KYLoginView.xib in Resources */,
 			);
@@ -507,17 +591,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D0F2FA1CCF37B900EE80AE /* KYLoginVc.m in Sources */,
+				5145AE5C1CD5F841008A1981 /* KYUserMessageVc.m in Sources */,
 				517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */,
 				51D0F2F51CCF2E0C00EE80AE /* KYLoginViewTop.m in Sources */,
 				517F3FD31CCCEC8D00AE9372 /* KYShowCollectionViewCell.m in Sources */,
+				5145AE741CD62F98008A1981 /* KYSicknessVc.m in Sources */,
 				517F3FD61CCCECCC00AE9372 /* KYMasterView.m in Sources */,
+				5145AE511CD5E4A0008A1981 /* KYForGetPassWord.m in Sources */,
 				511C88A81CCC87D9008F2BDD /* AppDelegate.m in Sources */,
 				51D0F2EC1CCF2C9700EE80AE /* KYNavigationVc.m in Sources */,
 				51D0F3501CCF77EC00EE80AE /* KYRegisterView.m in Sources */,
 				517F3FEE1CCD0CAF00AE9372 /* KYModuleFlowLayout.m in Sources */,
 				51D0F2881CCDD90D00EE80AE /* KYMasterDownModel.m in Sources */,
+				5145AE611CD610FD008A1981 /* KYUser.m in Sources */,
 				517F3FDA1CCCF9D800AE9372 /* KYFlowLayout.m in Sources */,
+				5145AE781CD63137008A1981 /* KYGongYiModuleVc.m in Sources */,
 				517A58A51CD0BEB50080B9DF /* KYNoteViewControler.m in Sources */,
+				5145AE591CD5F090008A1981 /* KYRegisterVc.m in Sources */,
+				517A58A91CD2060C0080B9DF /* KYNoteView.m in Sources */,
 				51D0F28F1CCDDD7F00EE80AE /* DownCellBtn.m in Sources */,
 				511C88A51CCC87D9008F2BDD /* main.m in Sources */,
 				51D0F2F21CCF2CFA00EE80AE /* KYUserVc.m in Sources */,
@@ -526,6 +617,7 @@
 				517F3FD01CCCEC5B00AE9372 /* KYShowCollectionView.m in Sources */,
 				517F3FE81CCD096200AE9372 /* KYModuleCollectionView.m in Sources */,
 				517F3FCB1CCCC8DE00AE9372 /* KYMasterTopView.m in Sources */,
+				5145AE561CD5EB1F008A1981 /* KYForgetPasswordVc.m in Sources */,
 				51D0F2FF1CCF3D9C00EE80AE /* KYLoginView.m in Sources */,
 				51D0F2EB1CCF2C9700EE80AE /* UIView+Extension.m in Sources */,
 				517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */,

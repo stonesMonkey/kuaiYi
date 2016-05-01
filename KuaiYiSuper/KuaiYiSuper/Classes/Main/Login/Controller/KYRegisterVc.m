@@ -1,28 +1,28 @@
 //
-//  KYNoteViewControler.m
+//  KYRegisterVc.m
 //  KuaiYiSuper
 //
-//  Created by WZZ on 16/4/27.
+//  Created by WZZ on 16/5/1.
 //  Copyright © 2016年 WZZ. All rights reserved.
 //
 
-#import "KYNoteViewControler.h"
+#import "KYRegisterVc.h"
 
-@interface KYNoteViewControler ()
+@interface KYRegisterVc ()
 
 @end
 
-@implementation KYNoteViewControler
+@implementation KYRegisterVc
 
 - (void)loadView {
     
-    self.view = KYLoadNib(@"KYNoteView");
+    self.view = KYLoadNib(@"KYRegisterView");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"注册登录";
+    self.title = @"注册账号";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self setuoRightBtn]];
 }
 

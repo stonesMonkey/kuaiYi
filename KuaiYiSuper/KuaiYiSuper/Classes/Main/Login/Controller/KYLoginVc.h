@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class KYLoginVc;
+@protocol KYLoginVcDelegate <NSObject>
+
+- (void)loginVcChangeController:(KYLoginVc *)loginVc;
+
+@end
 
 @interface KYLoginVc : UIViewController
+
+@property(nonatomic,weak)id delegate;
 
 @end

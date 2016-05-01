@@ -11,6 +11,8 @@
 #import "KYMasterDownView.h"
 #import "KYUserVc.h"
 #import "KYMasterDownModel.h"
+#import "KYSicknessVc.h"
+#import "KYGongYiModuleVc.h"
 @interface KYMasterVc ()
 
 //
@@ -30,7 +32,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = KYMasterVcTitle;
-    // 添加右边按钮
+    // 添加左边按钮
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self leftBarButton]];
     // 设定属性
@@ -44,13 +46,29 @@
     
     KYMasterTopView *topView = [KYMasterTopView masterTopView];
     KYMasterDownView *donwView = [KYMasterDownView masterDownView];
+    [donwView setJumpSickModuleVc:^(NSString *classStr, NSString *sickName) {
+        
+        Class class = NSClassFromString(classStr);
+        if ([classStr  isEqual: @"KYSicknessVc"]) {
+            
+            KYSicknessVc *sickVc = [KYSicknessVc sicknessVcWithName:sickName];
+            
+            [self.navigationController pushViewController:sickVc animated:YES];
+        } else {
+            
+            KYGongYiModuleVc *gongYiVc =(KYGongYiModuleVc *)[[class alloc] init];
+            gongYiVc.view.backgroundColor = [UIColor orangeColor];
+            [self.navigationController pushViewController:gongYiVc animated:YES];
+        }
+    }];
+    
     [self.view addSubview:topView];
     [self.view addSubview:donwView];
     self.topView = topView;
     self.downView = donwView;
     // 添加约束
     [topView mas_makeConstraints:^(MASConstraintMaker *make) {
-       
+        
         make.left.equalTo(self.view);
         make.right.equalTo(self.view);
         make.top.equalTo(self.view);
