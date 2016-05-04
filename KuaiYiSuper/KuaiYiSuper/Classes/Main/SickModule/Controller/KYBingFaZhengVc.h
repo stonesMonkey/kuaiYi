@@ -1,5 +1,5 @@
 //
-//  KYJiBingXiFenVc.h
+//  BingFaZhengVc.h
 //  KuaiYiSuper
 //
 //  Created by WZZ on 16/5/4.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KYJiBingXiFenVc : UIViewController
+@interface KYBingFaZhengVc : UIViewController
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 WZZ. All rights reserved.
 //
 
-#import "DownCellBtn.h"
+#import "KYDownCellBtn.h"
 
-@implementation DownCellBtn
+@implementation KYDownCellBtn
 
 
 - (void)layoutSubviews {

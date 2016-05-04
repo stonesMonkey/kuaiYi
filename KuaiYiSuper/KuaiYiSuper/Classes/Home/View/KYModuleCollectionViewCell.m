@@ -7,7 +7,7 @@
 //
 
 #import "KYModuleCollectionViewCell.h"
-#import "DownCellBtn.h"
+#import "KYDownCellBtn.h"
 #import "kymasterdownModel.h"
 @interface KYModuleCollectionViewCell()
 

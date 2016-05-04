@@ -21,6 +21,9 @@
 		5145AE741CD62F98008A1981 /* KYSicknessVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE701CD62F98008A1981 /* KYSicknessVc.m */; };
 		5145AE751CD62F98008A1981 /* KYSicknessVc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5145AE711CD62F98008A1981 /* KYSicknessVc.storyboard */; };
 		5145AE781CD63137008A1981 /* KYGongYiModuleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5145AE771CD63137008A1981 /* KYGongYiModuleVc.m */; };
+		517A114E1CDA18C100338F15 /* KYBingFaZhengVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A114D1CDA18C100338F15 /* KYBingFaZhengVc.m */; };
+		517A11511CDA1C5300338F15 /* KYZhiLiaoFangShiVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A11501CDA1C5300338F15 /* KYZhiLiaoFangShiVc.m */; };
+		517A11591CDA1FA400338F15 /* KYDoctorVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A11581CDA1FA400338F15 /* KYDoctorVc.m */; };
 		517A58A51CD0BEB50080B9DF /* KYNoteViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A58A31CD0BEB50080B9DF /* KYNoteViewControler.m */; };
 		517A58A61CD0BEB50080B9DF /* KYNoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517A58A41CD0BEB50080B9DF /* KYNoteView.xib */; };
 		517A58A91CD2060C0080B9DF /* KYNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A58A81CD2060C0080B9DF /* KYNoteView.m */; };
@@ -39,7 +42,7 @@
 		517F3FEE1CCD0CAF00AE9372 /* KYModuleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 517F3FED1CCD0CAF00AE9372 /* KYModuleFlowLayout.m */; };
 		51D0F2881CCDD90D00EE80AE /* KYMasterDownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2871CCDD90D00EE80AE /* KYMasterDownModel.m */; };
 		51D0F28C1CCDD9F500EE80AE /* KYMasterDownModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D0F28B1CCDD9F500EE80AE /* KYMasterDownModel.plist */; };
-		51D0F28F1CCDDD7F00EE80AE /* DownCellBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F28E1CCDDD7F00EE80AE /* DownCellBtn.m */; };
+		51D0F28F1CCDDD7F00EE80AE /* KYDownCellBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F28E1CCDDD7F00EE80AE /* KYDownCellBtn.m */; };
 		51D0F2931CCDE44C00EE80AE /* KYModuleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D0F2921CCDE44C00EE80AE /* KYModuleCollectionViewCell.xib */; };
 		51D0F2EB1CCF2C9700EE80AE /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2E41CCF2C9700EE80AE /* UIView+Extension.m */; };
 		51D0F2EC1CCF2C9700EE80AE /* KYNavigationVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D0F2E71CCF2C9700EE80AE /* KYNavigationVc.m */; };
@@ -81,6 +84,12 @@
 		5145AE711CD62F98008A1981 /* KYSicknessVc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KYSicknessVc.storyboard; sourceTree = "<group>"; };
 		5145AE761CD63137008A1981 /* KYGongYiModuleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYGongYiModuleVc.h; sourceTree = "<group>"; };
 		5145AE771CD63137008A1981 /* KYGongYiModuleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYGongYiModuleVc.m; sourceTree = "<group>"; };
+		517A114C1CDA18C100338F15 /* KYBingFaZhengVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBingFaZhengVc.h; sourceTree = "<group>"; };
+		517A114D1CDA18C100338F15 /* KYBingFaZhengVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBingFaZhengVc.m; sourceTree = "<group>"; };
+		517A114F1CDA1C5300338F15 /* KYZhiLiaoFangShiVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYZhiLiaoFangShiVc.h; sourceTree = "<group>"; };
+		517A11501CDA1C5300338F15 /* KYZhiLiaoFangShiVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYZhiLiaoFangShiVc.m; sourceTree = "<group>"; };
+		517A11571CDA1FA400338F15 /* KYDoctorVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDoctorVc.h; sourceTree = "<group>"; };
+		517A11581CDA1FA400338F15 /* KYDoctorVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDoctorVc.m; sourceTree = "<group>"; };
 		517A58A21CD0BEB50080B9DF /* KYNoteViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYNoteViewControler.h; path = ../View/KYNoteViewControler.h; sourceTree = "<group>"; };
 		517A58A31CD0BEB50080B9DF /* KYNoteViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYNoteViewControler.m; path = ../View/KYNoteViewControler.m; sourceTree = "<group>"; };
 		517A58A41CD0BEB50080B9DF /* KYNoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYNoteView.xib; sourceTree = "<group>"; };
@@ -114,8 +123,8 @@
 		51D0F2861CCDD90D00EE80AE /* KYMasterDownModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMasterDownModel.h; sourceTree = "<group>"; };
 		51D0F2871CCDD90D00EE80AE /* KYMasterDownModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMasterDownModel.m; sourceTree = "<group>"; };
 		51D0F28B1CCDD9F500EE80AE /* KYMasterDownModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KYMasterDownModel.plist; sourceTree = "<group>"; };
-		51D0F28D1CCDDD7F00EE80AE /* DownCellBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownCellBtn.h; sourceTree = "<group>"; };
-		51D0F28E1CCDDD7F00EE80AE /* DownCellBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownCellBtn.m; sourceTree = "<group>"; };
+		51D0F28D1CCDDD7F00EE80AE /* KYDownCellBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDownCellBtn.h; sourceTree = "<group>"; };
+		51D0F28E1CCDDD7F00EE80AE /* KYDownCellBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDownCellBtn.m; sourceTree = "<group>"; };
 		51D0F2921CCDE44C00EE80AE /* KYModuleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYModuleCollectionViewCell.xib; sourceTree = "<group>"; };
 		51D0F2E31CCF2C9700EE80AE /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		51D0F2E41CCF2C9700EE80AE /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -222,6 +231,10 @@
 				5145AE771CD63137008A1981 /* KYGongYiModuleVc.m */,
 				510AD6FC1CD9C6CB000C6D63 /* KYJiBingXiFenVc.h */,
 				510AD6FD1CD9C6CB000C6D63 /* KYJiBingXiFenVc.m */,
+				517A114C1CDA18C100338F15 /* KYBingFaZhengVc.h */,
+				517A114D1CDA18C100338F15 /* KYBingFaZhengVc.m */,
+				517A114F1CDA1C5300338F15 /* KYZhiLiaoFangShiVc.h */,
+				517A11501CDA1C5300338F15 /* KYZhiLiaoFangShiVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +247,40 @@
 			sourceTree = "<group>";
 		};
 		5145AE731CD62F98008A1981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		517A11531CDA1F8500338F15 /* DocotorShow(医生信息模块) */ = {
+			isa = PBXGroup;
+			children = (
+				517A11541CDA1F8500338F15 /* Controller */,
+				517A11551CDA1F8500338F15 /* Model */,
+				517A11561CDA1F8500338F15 /* View */,
+			);
+			name = "DocotorShow(医生信息模块)";
+			path = DocotorShow;
+			sourceTree = "<group>";
+		};
+		517A11541CDA1F8500338F15 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				517A11571CDA1FA400338F15 /* KYDoctorVc.h */,
+				517A11581CDA1FA400338F15 /* KYDoctorVc.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		517A11551CDA1F8500338F15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		517A11561CDA1F8500338F15 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -325,8 +372,8 @@
 				517F3FE91CCD098500AE9372 /* KYModuleCollectionViewCell.h */,
 				517F3FEA1CCD098500AE9372 /* KYModuleCollectionViewCell.m */,
 				51D0F2921CCDE44C00EE80AE /* KYModuleCollectionViewCell.xib */,
-				51D0F28D1CCDDD7F00EE80AE /* DownCellBtn.h */,
-				51D0F28E1CCDDD7F00EE80AE /* DownCellBtn.m */,
+				51D0F28D1CCDDD7F00EE80AE /* KYDownCellBtn.h */,
+				51D0F28E1CCDDD7F00EE80AE /* KYDownCellBtn.m */,
 				517F3FEC1CCD0CAF00AE9372 /* KYModuleFlowLayout.h */,
 				517F3FED1CCD0CAF00AE9372 /* KYModuleFlowLayout.m */,
 			);
@@ -352,6 +399,7 @@
 		51D0F2E11CCF2C9700EE80AE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				517A11531CDA1F8500338F15 /* DocotorShow(医生信息模块) */,
 				5145AE6D1CD62F98008A1981 /* SickModule(疾病模块) */,
 				51D0F2E21CCF2C9700EE80AE /* Category */,
 				51D0F2E51CCF2C9700EE80AE /* Controller */,
@@ -597,6 +645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D0F2FA1CCF37B900EE80AE /* KYLoginVc.m in Sources */,
+				517A114E1CDA18C100338F15 /* KYBingFaZhengVc.m in Sources */,
 				5145AE5C1CD5F841008A1981 /* KYUserMessageVc.m in Sources */,
 				517F3FBB1CCC953300AE9372 /* KYMasterVc.m in Sources */,
 				51D0F2F51CCF2E0C00EE80AE /* KYLoginViewTop.m in Sources */,
@@ -613,9 +662,10 @@
 				517F3FDA1CCCF9D800AE9372 /* KYFlowLayout.m in Sources */,
 				5145AE781CD63137008A1981 /* KYGongYiModuleVc.m in Sources */,
 				517A58A51CD0BEB50080B9DF /* KYNoteViewControler.m in Sources */,
+				517A11591CDA1FA400338F15 /* KYDoctorVc.m in Sources */,
 				5145AE591CD5F090008A1981 /* KYRegisterVc.m in Sources */,
 				517A58A91CD2060C0080B9DF /* KYNoteView.m in Sources */,
-				51D0F28F1CCDDD7F00EE80AE /* DownCellBtn.m in Sources */,
+				51D0F28F1CCDDD7F00EE80AE /* KYDownCellBtn.m in Sources */,
 				511C88A51CCC87D9008F2BDD /* main.m in Sources */,
 				51D0F2F21CCF2CFA00EE80AE /* KYUserVc.m in Sources */,
 				510AD6FE1CD9C6CB000C6D63 /* KYJiBingXiFenVc.m in Sources */,
@@ -627,6 +677,7 @@
 				5145AE561CD5EB1F008A1981 /* KYForgetPasswordVc.m in Sources */,
 				51D0F2FF1CCF3D9C00EE80AE /* KYLoginView.m in Sources */,
 				51D0F2EB1CCF2C9700EE80AE /* UIView+Extension.m in Sources */,
+				517A11511CDA1C5300338F15 /* KYZhiLiaoFangShiVc.m in Sources */,
 				517F3FC11CCCACA200AE9372 /* KYConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

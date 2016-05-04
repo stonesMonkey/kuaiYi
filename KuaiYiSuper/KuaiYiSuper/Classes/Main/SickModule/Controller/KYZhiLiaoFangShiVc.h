@@ -1,13 +1,13 @@
 //
-//  DownCellBtn.h
+//  ZhiLiaoFangShiVc.h
 //  KuaiYiSuper
 //
-//  Created by WZZ on 16/4/25.
+//  Created by WZZ on 16/5/4.
 //  Copyright © 2016年 WZZ. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface DownCellBtn : UIButton
+@interface KYZhiLiaoFangShiVc : UITableViewController
 
 @end

@@ -8,6 +8,8 @@
 
 #import "KYSicknessVc.h"
 #import "KYJiBingXiFenVc.h"
+#import "KYBingFaZhengVc.h"
+#import "KYZhiLiaoFangShiVc.h"
 @interface KYSicknessVc ()
 
 // 疾病细分
@@ -36,9 +38,6 @@
 
 // 是否接受治疗Label
 @property (weak, nonatomic) IBOutlet UILabel *jieShouZhiLiaoLabel;
-
-
-
 
 @end
 
@@ -84,6 +83,7 @@
     btn.frame = CGRectMake(0, 0, 44, 44);
     return btn;
 }
+
 #pragma mark - 私有方法
 
 
@@ -102,13 +102,11 @@
  */
 - (void)jiBinFenXiTap {
     
-    UITableViewController *resultVc = [[UIViewController alloc] init];
-    resultVc.view.backgroundColor = [UIColor purpleColor];
+    KYJiBingXiFenVc *jiBingVc = [[KYJiBingXiFenVc alloc] init];
+    jiBingVc.view.backgroundColor = [UIColor purpleColor];
     
-    UISearchController *viewVc = [[UISearchController alloc] initWithSearchResultsController:resultVc];
-    viewVc.view.backgroundColor = [UIColor redColor];
-    viewVc.title = @"疾病分析";
-    [self.navigationController pushViewController:viewVc animated:YES];
+    jiBingVc.title = @"疾病分析";
+    [self.navigationController pushViewController:jiBingVc animated:YES];
     
 //    UISearchController
     
@@ -119,7 +117,7 @@
  */
 - (void)bingFaZhengXuanZeTap {
     
-    UIViewController *viewVc = [[UIViewController alloc] init];
+    KYBingFaZhengVc *viewVc = [[KYBingFaZhengVc alloc] init];
     viewVc.view.backgroundColor = [UIColor orangeColor];
     viewVc.title = @"并发症选择";
     [self.navigationController pushViewController:viewVc animated:YES];
@@ -130,7 +128,8 @@
  */
 - (void)zhiLiaoFangShiTap {
     
-    UIViewController *viewVc = [[UIViewController alloc] init];
+    KYZhiLiaoFangShiVc *viewVc = [[KYZhiLiaoFangShiVc alloc] init];
+    viewVc.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     viewVc.view.backgroundColor = [UIColor purpleColor];
     viewVc.title = @"治疗方式";
     [self.navigationController pushViewController:viewVc animated:YES];
