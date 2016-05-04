@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510AD6FE1CD9C6CB000C6D63 /* KYJiBingXiFenVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 510AD6FD1CD9C6CB000C6D63 /* KYJiBingXiFenVc.m */; };
 		511C88A51CCC87D9008F2BDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C88A41CCC87D9008F2BDD /* main.m */; };
 		511C88A81CCC87D9008F2BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C88A71CCC87D9008F2BDD /* AppDelegate.m */; };
 		511C88B01CCC87D9008F2BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511C88AF1CCC87D9008F2BDD /* Assets.xcassets */; };
@@ -55,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		510AD6FC1CD9C6CB000C6D63 /* KYJiBingXiFenVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYJiBingXiFenVc.h; sourceTree = "<group>"; };
+		510AD6FD1CD9C6CB000C6D63 /* KYJiBingXiFenVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYJiBingXiFenVc.m; sourceTree = "<group>"; };
 		511C88A01CCC87D9008F2BDD /* KuaiYiSuper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuaiYiSuper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511C88A41CCC87D9008F2BDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		511C88A61CCC87D9008F2BDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -198,13 +201,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5145AE6D1CD62F98008A1981 /* SickModule */ = {
+		5145AE6D1CD62F98008A1981 /* SickModule(疾病模块) */ = {
 			isa = PBXGroup;
 			children = (
 				5145AE6E1CD62F98008A1981 /* Controller */,
 				5145AE721CD62F98008A1981 /* Model */,
 				5145AE731CD62F98008A1981 /* View */,
 			);
+			name = "SickModule(疾病模块)";
 			path = SickModule;
 			sourceTree = "<group>";
 		};
@@ -216,6 +220,8 @@
 				5145AE711CD62F98008A1981 /* KYSicknessVc.storyboard */,
 				5145AE761CD63137008A1981 /* KYGongYiModuleVc.h */,
 				5145AE771CD63137008A1981 /* KYGongYiModuleVc.m */,
+				510AD6FC1CD9C6CB000C6D63 /* KYJiBingXiFenVc.h */,
+				510AD6FD1CD9C6CB000C6D63 /* KYJiBingXiFenVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,7 +352,7 @@
 		51D0F2E11CCF2C9700EE80AE /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5145AE6D1CD62F98008A1981 /* SickModule */,
+				5145AE6D1CD62F98008A1981 /* SickModule(疾病模块) */,
 				51D0F2E21CCF2C9700EE80AE /* Category */,
 				51D0F2E51CCF2C9700EE80AE /* Controller */,
 				51D0F2E81CCF2C9700EE80AE /* Login */,
@@ -612,6 +618,7 @@
 				51D0F28F1CCDDD7F00EE80AE /* DownCellBtn.m in Sources */,
 				511C88A51CCC87D9008F2BDD /* main.m in Sources */,
 				51D0F2F21CCF2CFA00EE80AE /* KYUserVc.m in Sources */,
+				510AD6FE1CD9C6CB000C6D63 /* KYJiBingXiFenVc.m in Sources */,
 				517F3FEB1CCD098500AE9372 /* KYModuleCollectionViewCell.m in Sources */,
 				517F3FE21CCD06AB00AE9372 /* KYMasterDownView.m in Sources */,
 				517F3FD01CCCEC5B00AE9372 /* KYShowCollectionView.m in Sources */,

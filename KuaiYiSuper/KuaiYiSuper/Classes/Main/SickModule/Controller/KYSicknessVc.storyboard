@@ -18,22 +18,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="疾病类型:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F92-Pj-kea">
-                                <rect key="frame" x="20" y="84" width="61" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="疾病类型:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F92-Pj-kea">
+                                <rect key="frame" x="20" y="40" width="61" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你选择的那种疾病" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSa-AJ-Yct">
-                                <rect key="frame" x="91" y="84" width="112" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你选择的那种疾病" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSa-AJ-Yct">
+                                <rect key="frame" x="91" y="40" width="112" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djL-sq-cAi">
-                                <rect key="frame" x="20" y="151" width="280" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUT-7h-B06" userLabel="疾病细分">
+                                <rect key="frame" x="20" y="67" width="280" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-zL-dky">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择疾病细分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-Rh-iTA">
+                                        <rect key="frame" x="10" y="6" width="98" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-yd-kLj">
+                                        <rect key="frame" x="240" y="0.0" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="7Ni-fE-cju"/>
+                                        </constraints>
+                                        <state key="normal" image="illness_button_input_blue.png"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkx-Zm-5Zo">
+                                        <rect key="frame" x="238" y="2" width="2" height="26"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2" id="DCo-4f-ge5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="43i-BV-Ufo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Adk-yd-kLj" secondAttribute="bottom" id="5OF-Xy-6cn"/>
+                                    <constraint firstItem="Adk-yd-kLj" firstAttribute="leading" secondItem="Dkx-Zm-5Zo" secondAttribute="trailing" id="CIq-vL-0sj"/>
+                                    <constraint firstItem="Dkx-Zm-5Zo" firstAttribute="top" secondItem="BUT-7h-B06" secondAttribute="top" constant="2" id="GvF-i5-cMV"/>
+                                    <constraint firstItem="ldC-Rh-iTA" firstAttribute="leading" secondItem="BUT-7h-B06" secondAttribute="leading" constant="10" id="Rrb-Yr-CdO"/>
+                                    <constraint firstItem="Adk-yd-kLj" firstAttribute="top" secondItem="BUT-7h-B06" secondAttribute="top" id="Xab-CA-9Rm"/>
+                                    <constraint firstItem="ldC-Rh-iTA" firstAttribute="centerY" secondItem="BUT-7h-B06" secondAttribute="centerY" id="hsQ-2J-brG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dkx-Zm-5Zo" secondAttribute="bottom" constant="2" id="l9W-3s-dB6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Adk-yd-kLj" secondAttribute="trailing" id="tSW-Qh-RSj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djL-sq-cAi" userLabel="并发症选择">
+                                <rect key="frame" x="20" y="107" width="280" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-zL-dky">
                                         <rect key="frame" x="240" y="0.0" width="40" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="3C8-QB-lo1"/>
@@ -67,8 +104,8 @@
                                     <constraint firstItem="bLS-zL-dky" firstAttribute="leading" secondItem="fYN-mt-33H" secondAttribute="trailing" id="tuc-NO-hMb"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8L2-TR-3Pl">
-                                <rect key="frame" x="20" y="191" width="280" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8L2-TR-3Pl" userLabel="是否确证">
+                                <rect key="frame" x="20" y="147" width="280" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否确认就症情况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-ht-i1i">
                                         <rect key="frame" x="10" y="6" width="58" height="17"/>
@@ -89,9 +126,14 @@
                                         <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="已确诊" image="illness_rb_img_nor.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <state key="selected" backgroundImage="illness_rb_img_sel.png"/>
+                                        <state key="selected" image="illness_rb_img_sel.png">
+                                            <color key="titleColor" red="0.02625474773" green="0.025631334530000001" blue="0.026682692309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="yiQueZhengDidClick:" destination="Q05-Bj-sWm" eventType="touchUpInside" id="rGv-iY-ZCC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb8-sp-g6K">
                                         <rect key="frame" x="175" y="4" width="75" height="22"/>
@@ -102,10 +144,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="症状疑症" image="illness_rb_img_nor.png">
+                                        <state key="normal" title="未确证" image="illness_rb_img_nor.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" backgroundImage="illness_rb_img_sel.png"/>
+                                        <state key="selected" image="illness_rb_img_sel.png"/>
+                                        <connections>
+                                            <action selector="weiQueZhengBtnDidClick:" destination="Q05-Bj-sWm" eventType="touchUpInside" id="W2Y-hQ-v8T"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,8 +164,57 @@
                                     <constraint firstAttribute="height" constant="30" id="uyp-Dw-6ni"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J0S-1c-kBC">
-                                <rect key="frame" x="20" y="231" width="280" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重疾诊所为您匹配到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysl-BR-S3q">
+                                <rect key="frame" x="36" y="267" width="248" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-fu-F6U" userLabel="在线医生">
+                                <rect key="frame" x="120" y="304" width="80" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-xl-kTF">
+                                        <rect key="frame" x="20" y="9" width="25" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.18273426139999999" green="0.3281390676" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E47-Ck-G9m">
+                                        <rect key="frame" x="57" y="14" width="13" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.18273426139999999" green="0.3281390676" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2H1-bZ-QPn"/>
+                                    <constraint firstAttribute="height" constant="44" id="fby-Df-6wq"/>
+                                    <constraint firstAttribute="trailing" secondItem="E47-Ck-G9m" secondAttribute="trailing" constant="10" id="j2M-vG-780"/>
+                                    <constraint firstItem="E47-Ck-G9m" firstAttribute="centerY" secondItem="BhU-fu-F6U" secondAttribute="centerY" id="jDJ-Oy-OgF"/>
+                                    <constraint firstItem="yIC-xl-kTF" firstAttribute="leading" secondItem="BhU-fu-F6U" secondAttribute="leading" constant="20" id="noZ-21-7ja"/>
+                                    <constraint firstItem="yIC-xl-kTF" firstAttribute="centerY" secondItem="BhU-fu-F6U" secondAttribute="centerY" id="yQx-2T-O5B"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illness_img_person.png" translatesAutoresizingMaskIntoConstraints="NO" id="I5H-Xi-vKu">
+                                <rect key="frame" x="138" y="368" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="TS0-cP-WN9"/>
+                                    <constraint firstAttribute="height" constant="44" id="g5L-uv-0g5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-mF-DWO">
+                                <rect key="frame" x="20" y="442" width="280" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="M6s-dM-nch"/>
+                                </constraints>
+                                <state key="normal" title="就诊申请">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0S-1c-kBC" userLabel="是否接受资料">
+                                <rect key="frame" x="20" y="187" width="280" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否接收过治疗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCt-RF-Twl">
                                         <rect key="frame" x="10" y="6" width="58" height="17"/>
@@ -143,7 +237,10 @@
                                         <state key="normal" title="接受过" image="illness_rb_img_nor.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" backgroundImage="illness_rb_img_sel.png"/>
+                                        <state key="selected" image="illness_rb_img_sel.png"/>
+                                        <connections>
+                                            <action selector="jieShouGuoBtnDidClick:" destination="Q05-Bj-sWm" eventType="touchUpInside" id="hNM-fo-oLp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfB-6c-YKa">
                                         <rect key="frame" x="175" y="4" width="75" height="22"/>
@@ -157,7 +254,10 @@
                                         <state key="normal" title="未接受过" image="illness_rb_img_nor.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" backgroundImage="illness_rb_img_sel.png"/>
+                                        <state key="selected" image="illness_rb_img_sel.png"/>
+                                        <connections>
+                                            <action selector="weiJieShouGuoDidClick:" destination="Q05-Bj-sWm" eventType="touchUpInside" id="fAs-dx-dnX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,10 +271,10 @@
                                     <constraint firstAttribute="trailing" secondItem="XfB-6c-YKa" secondAttribute="trailing" constant="30" id="nPD-Pa-giQ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GoI-l7-gny" userLabel="治疗方式">
-                                <rect key="frame" x="20" y="271" width="280" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoI-l7-gny" userLabel="治疗方式">
+                                <rect key="frame" x="20" y="227" width="280" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu2-Ks-RcH">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu2-Ks-RcH">
                                         <rect key="frame" x="240" y="0.0" width="40" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="jXe-44-50B"/>
@@ -208,92 +308,6 @@
                                     <constraint firstAttribute="height" constant="30" id="xvD-Rc-Phz"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="重疾诊所为您匹配到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysl-BR-S3q">
-                                <rect key="frame" x="36" y="311" width="248" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUT-7h-B06">
-                                <rect key="frame" x="20" y="111" width="280" height="30"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择疾病细分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-Rh-iTA">
-                                        <rect key="frame" x="10" y="6" width="98" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-yd-kLj">
-                                        <rect key="frame" x="240" y="0.0" width="40" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="7Ni-fE-cju"/>
-                                        </constraints>
-                                        <state key="normal" image="illness_button_input_blue.png"/>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkx-Zm-5Zo">
-                                        <rect key="frame" x="238" y="2" width="2" height="26"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="2" id="DCo-4f-ge5"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="43i-BV-Ufo"/>
-                                    <constraint firstAttribute="bottom" secondItem="Adk-yd-kLj" secondAttribute="bottom" id="5OF-Xy-6cn"/>
-                                    <constraint firstItem="Adk-yd-kLj" firstAttribute="leading" secondItem="Dkx-Zm-5Zo" secondAttribute="trailing" id="CIq-vL-0sj"/>
-                                    <constraint firstItem="Dkx-Zm-5Zo" firstAttribute="top" secondItem="BUT-7h-B06" secondAttribute="top" constant="2" id="GvF-i5-cMV"/>
-                                    <constraint firstItem="ldC-Rh-iTA" firstAttribute="leading" secondItem="BUT-7h-B06" secondAttribute="leading" constant="10" id="Rrb-Yr-CdO"/>
-                                    <constraint firstItem="Adk-yd-kLj" firstAttribute="top" secondItem="BUT-7h-B06" secondAttribute="top" id="Xab-CA-9Rm"/>
-                                    <constraint firstItem="ldC-Rh-iTA" firstAttribute="centerY" secondItem="BUT-7h-B06" secondAttribute="centerY" id="hsQ-2J-brG"/>
-                                    <constraint firstAttribute="bottom" secondItem="Dkx-Zm-5Zo" secondAttribute="bottom" constant="2" id="l9W-3s-dB6"/>
-                                    <constraint firstAttribute="trailing" secondItem="Adk-yd-kLj" secondAttribute="trailing" id="tSW-Qh-RSj"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-fu-F6U">
-                                <rect key="frame" x="120" y="348" width="80" height="44"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-xl-kTF">
-                                        <rect key="frame" x="20" y="9" width="25" height="25.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <color key="textColor" red="0.18273426139999999" green="0.3281390676" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E47-Ck-G9m">
-                                        <rect key="frame" x="57" y="14" width="13" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.18273426139999999" green="0.3281390676" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="2H1-bZ-QPn"/>
-                                    <constraint firstAttribute="height" constant="44" id="fby-Df-6wq"/>
-                                    <constraint firstAttribute="trailing" secondItem="E47-Ck-G9m" secondAttribute="trailing" constant="10" id="j2M-vG-780"/>
-                                    <constraint firstItem="E47-Ck-G9m" firstAttribute="centerY" secondItem="BhU-fu-F6U" secondAttribute="centerY" id="jDJ-Oy-OgF"/>
-                                    <constraint firstItem="yIC-xl-kTF" firstAttribute="leading" secondItem="BhU-fu-F6U" secondAttribute="leading" constant="20" id="noZ-21-7ja"/>
-                                    <constraint firstItem="yIC-xl-kTF" firstAttribute="centerY" secondItem="BhU-fu-F6U" secondAttribute="centerY" id="yQx-2T-O5B"/>
-                                </constraints>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="illness_img_person.png" translatesAutoresizingMaskIntoConstraints="NO" id="I5H-Xi-vKu">
-                                <rect key="frame" x="138" y="412" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="TS0-cP-WN9"/>
-                                    <constraint firstAttribute="height" constant="44" id="g5L-uv-0g5"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-mF-DWO">
-                                <rect key="frame" x="20" y="486" width="280" height="44"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="M6s-dM-nch"/>
-                                </constraints>
-                                <state key="normal" title="就诊申请">
-                                    <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -329,6 +343,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="疾病详情选择" id="54a-aO-0Bj"/>
+                    <connections>
+                        <outlet property="bingfaZhengXuanze" destination="djL-sq-cAi" id="bxe-hM-be8"/>
+                        <outlet property="jiBingXiFen" destination="BUT-7h-B06" id="hMV-Wg-nvf"/>
+                        <outlet property="jieShouGuo" destination="lFl-g2-zeX" id="9af-jw-zgq"/>
+                        <outlet property="jieShouZhiLiaoLabel" destination="tCt-RF-Twl" id="YqP-gc-tJO"/>
+                        <outlet property="queZhengLabel" destination="uMD-ht-i1i" id="Ka1-6y-C1P"/>
+                        <outlet property="weiJieShouBtn" destination="XfB-6c-YKa" id="Wcl-q2-qum"/>
+                        <outlet property="weiQueZheng" destination="kb8-sp-g6K" id="waY-ay-rQY"/>
+                        <outlet property="yiQueZhengBtn" destination="uOD-fE-cam" id="tQT-z6-KtD"/>
+                        <outlet property="zhiLiaoFangShi" destination="GoI-l7-gny" id="QZN-qw-2xx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1A-EF-ZAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
